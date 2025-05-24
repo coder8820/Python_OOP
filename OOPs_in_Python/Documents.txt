@@ -1,0 +1,88 @@
+-----------------> Notes Detailed About OOPS <----------------
+
+Object-oriented programming (OOP) is a programming paradigm that uses "objects" to 
+represent data and methods to manipulate that data. OOP is based on several key concepts:
+
+1. ----------> Classes and Objects:
+   A class is a blueprint for creating objects. An object is an instance of a class.
+
+2. ----------> Encapsulation: 
+   Encapsulation is the bundling of data and methods that operate on that data within a
+   single unit (class). It restricts direct access to some components, which can prevent the
+   accidental modification of data.
+
+3. ---------> Inheritance: 
+   Inheritance is a mechanism where a new class (child class) can inherit attributes and
+   methods from an existing class (parent class). This promotes code reusablity and establishes a
+   relationship between classes.
+   Inheritance can be single (one parent class) or multiple (multiple parent classes).
+
+4. ---------> Polymorphism:
+   Polymorphism allows objects of different classes to be treated as objects of a common
+   superclass. It enables a single interface to represent different underlying forms (data types).
+   There are two types of polymorphism:
+   1. Compile-time polymorphism (method overloading): This occurs when multiple methods have the same
+      name but different parameters. The method to be executed is determined at compile time.
+   2. Runtime polymorphism (method overriding): This occurs when a subclass provides a specific
+      implementation of a method that is already defined in its superclass. The method
+      to be executed is determined at runtime based on the object type.
+   Example of compile-time polymorphism:
+
+
+5.-----------> Abstraction:
+   Abstraction is the concept of hiding the complex implementation details and showing only
+   the essential features of the object. It helps in reducing complexity and increasing efficiency.
+   Abstraction can be achieved using abstract classes and interfaces.
+   An abstract class is a class that cannot be instantiated and can contain abstract methods
+
+6. ----------> Composition:
+   Composition is a design principle where a class is composed of one or more objects from
+   other classes. It allows for building complex types by combining objects of other types.
+   Composition represents a "has-a" relationship, where one class contains references to objects
+   of another class. It is a stronger relationship than aggregation, as the lifetime of the
+   contained objects is tied to the lifetime of the containing object. If the containing object
+   is destroyed, the contained objects are also destroyed. This is in contrast to aggregation,
+   where the contained objects can exist independently of the containing object.
+
+7. -----------> Aggregation: 
+   Aggregation is a special form of association where one class (the whole) contains
+   references to objects of another class (the parts). It represents a "has-a" relationship.
+   In aggregation, the contained objects can exist independently of the containing object.
+
+8. ------------> Method Overriding:
+   Method overriding allows a subclass to provide a specific implementation of a method
+   that is already defined in its superclass. This enalbes dynamic polymorphism.
+   When a method is called on an object, the version of the method that is executed is determined
+   by the actual object type, not the reference type. This allows for more flexible and
+   extensible code, as subclasses can customize or extend the behavior of methods defined in
+   their parent classes. Method overriding is a key feature of OOP that supports polymorphism
+   and allows for dynamic method resolution at runtime.
+
+9. -------------> Method Overloading:
+   Method overloading allows multiple methods in the same class to have the same name
+   but different parameters. It enables the same method to perform different tasks based on the input.
+10. -------------> Constructor and Destructor:
+   A constructor is a special method that is called when an object is
+   instantiated. It initializes the object's attributes. A destructor is a special method that is called
+   when an object is destroyed. It cleans up resources and performs any necessary finalization.
+   In Python, the constructor is defined using the __init__() method, and the destructor is defined
+   using the __del__() method. The constructor is automatically called when an object is created,
+   while the destructor is automatically called when an object is no longer needed or goes out of scope.
+
+11. ----------> Class Variables and Instance Variables:
+   Class variables are shared among all instances of a class,
+   while instance variables are unique to each instance. Class variables are defined within  the class
+   but outside any method, while instance variables are defined within methods (usually the constructor).
+   Class variables are accessed using the class name or instance name, while instance variables are
+   accessed using the instance name. Class variables are useful for storing constants or shared data,
+   while instance variables are used to store data specific to each object. Changes to class variables
+   affect all instances, while changes to instance variables affect only the specific instance.
+
+12. ------------> Static Methods and Class Methods:
+   Static methods belong to the class rather than any instance and can
+   be called without creating an instance. Class methods are similar but take the class as the first
+   argument (usually named 'cls'). They are defined using the @classmethod decorator.
+   Static methods are defined using the @staticmethod decorator. Both static and class methods can be
+   called on the class itself or on instances of the class. Static methods are used for utility functions
+   that do not require access to instance or class data, while
+   class methods are used for factory methods or methods that need to access or modify class-level data.
