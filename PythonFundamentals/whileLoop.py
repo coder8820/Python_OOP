@@ -78,10 +78,20 @@
 
 # ----------- print Odd numbers only ------------
 
-arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# i = 0
+# while i < len(arr):
+#     if arr[i] % 2 != 0:
+#         print(arr[i])
+#         i += 1
+#     i += 1
+
+
+fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry', 'fig', 'grape', 'honeydew']
 i = 0
-while i < len(arr):
-    if arr[i] % 2 != 0:
-        print(arr[i])
-        i += 1
+while i < len(fruits):
+    if fruits[i] == 'date':
+        fruits[i] = 'dragonfruit'
+    print(fruits[i])
     i += 1
+# Output the modified list
